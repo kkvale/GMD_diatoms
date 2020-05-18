@@ -1,0 +1,9 @@
+ ! NOAA/PMEL TMAP
+ ! FERRET v6.82  
+ ! Linux 2.6.32-279.1.1.el6.x86_64 64-bit - 08/03/12
+ ! 20-Oct-18 14:43     
+
+us O_silica.nc
+sho da
+sha O_silica[k=1]
+exit

@@ -1,0 +1,15 @@
+ ! NOAA/PMEL TMAP
+ ! FERRET v6.82  
+ ! Linux 2.6.32-279.1.1.el6.x86_64 64-bit - 08/03/12
+ ! 20-Oct-17 15:33     
+
+use/order=xyzt step3.nc
+sho da
+canc data/all
+use/order=xytz step3.nc
+sho da
+use O_fe_dissolved.nc
+sho da
+let O_sidep = O_sildep[d=1,g=o_dissolved_fe[d=2,k=1]]+o_dissolved_fe[d=2,k=1]*0
+sha o_sidep[l=1]
+exit
